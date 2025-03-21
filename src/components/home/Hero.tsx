@@ -18,13 +18,13 @@ const Hero = () => {
             
             <FadeIn delay={0.3} direction="up">
               <h1 className="font-bold">
-                Creating beautiful digital experiences
+                Suraj Ingole
               </h1>
             </FadeIn>
             
             <FadeIn delay={0.5} direction="up">
               <p className="text-xl text-muted-foreground">
-                I design and build applications that are intuitive, efficient, and deliver exceptional user experiences.
+                I design and build applications that are intuitive, efficient, and deliver exceptional user experiences with expertise in React, Angular, Node.js and .NET Core.
               </p>
             </FadeIn>
             

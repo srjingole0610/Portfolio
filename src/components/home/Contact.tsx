@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Mail, Send } from 'lucide-react';
+import { Mail, Send, Phone, Linkedin, Github } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import FadeIn from '../animation/FadeIn';
 import { useToast } from '@/hooks/use-toast';
@@ -48,23 +48,42 @@ const ContactSection = () => {
               </div>
               <h2>Get In Touch</h2>
               <p className="text-muted-foreground text-lg">
-                I'm always interested in new opportunities, collaborations, or just a friendly chat about technology and design.
+                I'm always interested in new opportunities, collaborations, or just a friendly chat about technology and development.
               </p>
               <div className="space-y-4 pt-4">
                 <div className="flex items-center space-x-3">
                   <div className="h-px flex-1 bg-border"></div>
-                  <span className="text-muted-foreground text-sm font-medium">Or reach me via</span>
+                  <span className="text-muted-foreground text-sm font-medium">Contact Details</span>
+                  <div className="h-px flex-1 bg-border"></div>
+                </div>
+                <div className="flex flex-col space-y-2">
+                  <div className="flex items-center">
+                    <Mail className="h-5 w-5 mr-2" />
+                    <a href="mailto:suraj.ingole0610@gmail.com" className="hover:text-primary">suraj.ingole0610@gmail.com</a>
+                  </div>
+                  <div className="flex items-center">
+                    <Phone className="h-5 w-5 mr-2" />
+                    <a href="tel:+917385300245" className="hover:text-primary">+91 7385300245</a>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-3 pt-2">
+                  <div className="h-px flex-1 bg-border"></div>
+                  <span className="text-muted-foreground text-sm font-medium">Profiles</span>
                   <div className="h-px flex-1 bg-border"></div>
                 </div>
                 <div className="flex space-x-4">
                   <Button variant="outline" asChild>
-                    <a href="mailto:hello@example.com">Email</a>
+                    <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+                      <Linkedin className="mr-2 h-4 w-4" />LinkedIn
+                    </a>
                   </Button>
                   <Button variant="outline" asChild>
-                    <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+                    <a href="https://github.com" target="_blank" rel="noreferrer">
+                      <Github className="mr-2 h-4 w-4" />GitHub
+                    </a>
                   </Button>
                   <Button variant="outline" asChild>
-                    <a href="https://twitter.com" target="_blank" rel="noreferrer">Twitter</a>
+                    <a href="https://hackerrank.com" target="_blank" rel="noreferrer">HackerRank</a>
                   </Button>
                 </div>
               </div>

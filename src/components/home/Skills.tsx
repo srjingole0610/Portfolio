@@ -1,5 +1,5 @@
 
-import { CodeIcon, LayoutIcon, PaintbrushIcon, ServerIcon } from 'lucide-react';
+import { CodeIcon, LayoutIcon, PaintbrushIcon, ServerIcon, DatabaseIcon, ToolIcon } from 'lucide-react';
 import FadeIn from '../animation/FadeIn';
 
 const skills = [
@@ -7,25 +7,25 @@ const skills = [
     title: "Frontend Development",
     description: "Creating responsive, intuitive user interfaces with modern frameworks and libraries.",
     icon: <LayoutIcon className="h-10 w-10" />,
-    technologies: ["React", "TypeScript", "Redux", "Tailwind CSS"]
+    technologies: ["React", "Angular", "JavaScript", "TypeScript", "HTML/CSS", "Bootstrap", "TailwindCSS"]
   },
   {
     title: "Backend Development",
     description: "Building robust server-side applications and APIs to power web applications.",
     icon: <ServerIcon className="h-10 w-10" />,
-    technologies: ["Node.js", "Express", "PostgreSQL", "MongoDB"]
+    technologies: ["Node.js", "Express", ".NET Core", "C#", "REST APIs"]
   },
   {
-    title: "UI/UX Design",
-    description: "Designing beautiful, user-centered interfaces that enhance the user experience.",
-    icon: <PaintbrushIcon className="h-10 w-10" />,
-    technologies: ["Figma", "Adobe XD", "Design Systems", "Prototyping"]
+    title: "Database Management",
+    description: "Designing and maintaining databases to ensure data integrity and security.",
+    icon: <DatabaseIcon className="h-10 w-10" />,
+    technologies: ["SQL", "MongoDB", "PostgreSQL"]
   },
   {
-    title: "Best Practices",
-    description: "Following industry best practices to ensure high-quality, maintainable code.",
-    icon: <CodeIcon className="h-10 w-10" />,
-    technologies: ["Testing", "CI/CD", "Git", "Agile Methodologies"]
+    title: "DevOps & Tools",
+    description: "Utilizing modern tools and practices for efficient development and deployment.",
+    icon: <ToolIcon className="h-10 w-10" />,
+    technologies: ["Git", "GitHub", "Azure DevOps", "AWS", "Postman", "JIRA"]
   }
 ];
 
@@ -37,7 +37,7 @@ const Skills = () => {
           <div className="text-center mb-16">
             <h2 className="mb-4">Skills & Expertise</h2>
             <p className="max-w-2xl mx-auto text-muted-foreground text-lg">
-              A comprehensive set of skills that enable me to build complete, polished applications.
+              A comprehensive set of skills that enable me to build complete, polished applications from concept to deployment.
             </p>
           </div>
         </FadeIn>

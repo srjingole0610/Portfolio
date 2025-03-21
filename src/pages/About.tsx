@@ -3,6 +3,19 @@ import Layout from '@/components/layout/Layout';
 import FadeIn from '@/components/animation/FadeIn';
 import { Button } from '@/components/ui/button';
 import { Download } from 'lucide-react';
+import { 
+  Card, 
+  CardContent, 
+  CardDescription, 
+  CardHeader, 
+  CardTitle 
+} from '@/components/ui/card';
+import { 
+  Tabs, 
+  TabsContent, 
+  TabsList, 
+  TabsTrigger 
+} from '@/components/ui/tabs';
 
 const About = () => {
   return (
@@ -31,12 +44,12 @@ const About = () => {
                 <span className="inline-block px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-2">
                   About Me
                 </span>
-                <h1 className="text-4xl md:text-5xl font-bold mb-4">Hi, I'm Sarah Chen</h1>
+                <h1 className="text-4xl md:text-5xl font-bold mb-4">Hi, I'm Suraj Ingole</h1>
                 <p className="text-lg text-muted-foreground">
-                  I'm a full-stack developer with a passion for creating beautiful, functional web applications. With over 5 years of experience in the industry, I've worked on projects ranging from small business websites to large enterprise applications.
+                  I'm a full-stack developer with expertise in JavaScript, React, Angular, Node.js, and .NET Core. With over 5 years of professional experience, I've worked on projects ranging from small business websites to large enterprise applications.
                 </p>
                 <p className="text-lg text-muted-foreground">
-                  My approach to development is centered around the user experience, ensuring that every application I build is not only visually appealing but also intuitive and accessible.
+                  My approach to development is centered around creating high-performance, user-friendly applications that deliver exceptional experiences. I'm passionate about optimizing performance and ensuring applications are scalable, secure, and maintainable.
                 </p>
                 <div className="pt-4">
                   <Button asChild>
@@ -51,70 +64,147 @@ const About = () => {
 
           <div className="mt-24">
             <FadeIn direction="up">
-              <h2 className="text-3xl font-bold mb-12 text-center">My Journey</h2>
+              <Tabs defaultValue="experience" className="w-full">
+                <TabsList className="grid w-full grid-cols-3 mb-8">
+                  <TabsTrigger value="experience">Experience</TabsTrigger>
+                  <TabsTrigger value="education">Education</TabsTrigger>
+                  <TabsTrigger value="certifications">Certifications</TabsTrigger>
+                </TabsList>
+
+                <TabsContent value="experience" className="space-y-6">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>COLLABERA DIGITAL | Full Stack Developer</CardTitle>
+                      <CardDescription>Pune | May 2024 – Present</CardDescription>
+                    </CardHeader>
+                    <CardContent className="space-y-2">
+                      <ul className="list-disc pl-5 space-y-2">
+                        <li>Developed and deployed highly performant frontend web applications in React and Redux resulting in a 60% rise in site traffic.</li>
+                        <li>Utilized agile methodologies to deliver high-quality software ahead of tight schedules.</li>
+                        <li>Reduced the load time and speed up the site visibility in browser by implementing lazy loading and SSR (Server side rendering) which caused in 35% increase audience engagement.</li>
+                        <li>Refactored legacy codebase reducing bundle size by 30%, which significantly improved application load times and user experience.</li>
+                        <li>Created backend API using Node and express with PostgreSQL as the Database.</li>
+                        <li>Responsible for designing Database logic, Field_Names in PostgreSQL with the Data engineer.</li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>GLOBANT PVT LTD. | Full-Stack Developer</CardTitle>
+                      <CardDescription>Pune | March 2022 – March 2024</CardDescription>
+                    </CardHeader>
+                    <CardContent className="space-y-2">
+                      <ul className="list-disc pl-5 space-y-2">
+                        <li>Orchestrated end-to-end development of dynamic web applications with a robust tech stack that includes HTML, CSS, JavaScript, React, C#, .NET Core, SQL, and more.</li>
+                        <li>Collaborated seamlessly with multidisciplinary teams, blending design, functionality, and user experience to create engaging and intuitive interfaces.</li>
+                        <li>Engineered high-performance back-end systems using C# and .NET Core, ensuring seamless data integration, security, and scalability.</li>
+                        <li>Leveraged databases such as SQL to manage application data and implement effective data retrieval and manipulation strategies.</li>
+                        <li>Utilized React to design and build reusable UI components, implementing dynamic rendering and efficient state management.</li>
+                        <li>Streamlined development processes through agile methodologies, resulting in accelerated delivery and increased efficiency.</li>
+                        <li>Optimized deployment and enhanced application reliability by leveraging cloud technologies such as AWS.</li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>JAVA R&D | MERN Developer</CardTitle>
+                      <CardDescription>Pune | Nov 2021 – March 2022</CardDescription>
+                    </CardHeader>
+                    <CardContent className="space-y-2">
+                      <ul className="list-disc pl-5 space-y-2">
+                        <li>Led the development of multiple web applications from concept to deployment using the MEARN stack and .NET Core.</li>
+                        <li>Implemented RESTful APIs and optimized server-side performance using .NET Core to handle large volumes of data.</li>
+                        <li>Collaborated with frontend developers to integrate dynamic user interfaces using Angular and React frameworks.</li>
+                        <li>Designed and maintained MongoDB and SQL databases, ensuring data integrity and security.</li>
+                        <li>Utilized .NET Core to engineer high-performance back-end systems, ensuring seamless data integration, security, and scalability.</li>
+                        <li>Conducted code reviews, performed testing, and resolved bugs to maintain high code quality and reliability.</li>
+                        <li>Leveraged cloud technologies such as AWS to optimize deployment and enhance application reliability.</li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>TCS | Associate Engineer</CardTitle>
+                      <CardDescription>Pune | Sept 2018 – Nov 2021</CardDescription>
+                    </CardHeader>
+                    <CardContent className="space-y-2">
+                      <h4 className="font-medium">At Honeywell:</h4>
+                      <ul className="list-disc pl-5 space-y-2 mb-4">
+                        <li>Developed front-end website architecture using HTML, CSS, JavaScript, and React.</li>
+                        <li>Developed back-end website applications using C# and .NET Core.</li>
+                        <li>Created servers and databases for functionality using SQL.</li>
+                        <li>Ensured responsiveness of applications across various devices and screen sizes.</li>
+                        <li>Met both technical and consumer needs by implementing user-centered design principles.</li>
+                        <li>Resolved user issues through proactive communication and effective problem-solving.</li>
+                        <li>Troubleshot, debugged, and upgraded software to ensure optimal performance.</li>
+                        <li>Wrote technical documentation to maintain code quality and facilitate knowledge sharing.</li>
+                      </ul>
+
+                      <h4 className="font-medium">At Thomson Reuters:</h4>
+                      <ul className="list-disc pl-5 space-y-2">
+                        <li>Drive and attend scrum meetings, ensuring efficient project management.</li>
+                        <li>Implement changes in the front-end of the application using React and C#.</li>
+                        <li>Write scripts, modify store procedures, and other queries using SQL.</li>
+                        <li>Lead the development of VB.NET applications, ensuring high-quality software.</li>
+                        <li>Conduct unit testing and ensure code quality and reliability.</li>
+                        <li>Implement logics using C# and .NET Core to ensure efficient and effective application functionality.</li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </TabsContent>
+
+                <TabsContent value="education" className="space-y-6">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>E&TC Bachelors Of Engineering</CardTitle>
+                      <CardDescription>SPPU | Aug 2014 - Jun 2018</CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p>Pune</p>
+                      <p>Percentage: 76%</p>
+                    </CardContent>
+                  </Card>
+                </TabsContent>
+
+                <TabsContent value="certifications" className="space-y-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <Card>
+                      <CardHeader>
+                        <CardTitle>Agile Scrum Certification</CardTitle>
+                        <CardDescription>JPMorgan Chase & Co.</CardDescription>
+                      </CardHeader>
+                    </Card>
+                    <Card>
+                      <CardHeader>
+                        <CardTitle>Figma UI UX Design</CardTitle>
+                        <CardDescription>Udemy</CardDescription>
+                      </CardHeader>
+                    </Card>
+                    <Card>
+                      <CardHeader>
+                        <CardTitle>Javascript</CardTitle>
+                        <CardDescription>Udemy</CardDescription>
+                      </CardHeader>
+                    </Card>
+                    <Card>
+                      <CardHeader>
+                        <CardTitle>SQL (Basic) Certificate</CardTitle>
+                        <CardDescription>HackerRank</CardDescription>
+                      </CardHeader>
+                    </Card>
+                    <Card>
+                      <CardHeader>
+                        <CardTitle>C# (Basic) Certificate</CardTitle>
+                        <CardDescription>HackerRank</CardDescription>
+                      </CardHeader>
+                    </Card>
+                  </div>
+                </TabsContent>
+              </Tabs>
             </FadeIn>
-
-            <div className="space-y-12">
-              <FadeIn direction="up" delay={0.2}>
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8 items-start">
-                  <div>
-                    <h3 className="text-xl font-semibold">Education</h3>
-                  </div>
-                  <div className="md:col-span-3 space-y-6">
-                    <div className="bg-card border border-border rounded-lg p-6">
-                      <h4 className="text-lg font-medium">B.S. in Computer Science</h4>
-                      <p className="text-primary">Stanford University</p>
-                      <p className="text-muted-foreground">2014 - 2018</p>
-                      <p className="mt-3">
-                        Studied core computer science principles with a focus on software engineering and human-computer interaction.
-                      </p>
-                    </div>
-                    <div className="bg-card border border-border rounded-lg p-6">
-                      <h4 className="text-lg font-medium">UI/UX Design Certification</h4>
-                      <p className="text-primary">Google</p>
-                      <p className="text-muted-foreground">2019</p>
-                      <p className="mt-3">
-                        Completed an intensive program focused on user-centered design principles and methodologies.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </FadeIn>
-
-              <FadeIn direction="up" delay={0.4}>
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8 items-start">
-                  <div>
-                    <h3 className="text-xl font-semibold">Experience</h3>
-                  </div>
-                  <div className="md:col-span-3 space-y-6">
-                    <div className="bg-card border border-border rounded-lg p-6">
-                      <h4 className="text-lg font-medium">Senior Frontend Developer</h4>
-                      <p className="text-primary">TechCorp Inc.</p>
-                      <p className="text-muted-foreground">2021 - Present</p>
-                      <p className="mt-3">
-                        Lead the frontend development of the company's flagship product, managing a team of developers and implementing modern frontend practices.
-                      </p>
-                    </div>
-                    <div className="bg-card border border-border rounded-lg p-6">
-                      <h4 className="text-lg font-medium">Full-Stack Developer</h4>
-                      <p className="text-primary">Startup Hub</p>
-                      <p className="text-muted-foreground">2018 - 2021</p>
-                      <p className="mt-3">
-                        Developed and maintained multiple web applications for various clients, focusing on both frontend and backend technologies.
-                      </p>
-                    </div>
-                    <div className="bg-card border border-border rounded-lg p-6">
-                      <h4 className="text-lg font-medium">Freelance Web Developer</h4>
-                      <p className="text-primary">Self-Employed</p>
-                      <p className="text-muted-foreground">2016 - 2018</p>
-                      <p className="mt-3">
-                        Created websites and web applications for small businesses and individuals while completing my degree.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </FadeIn>
-            </div>
           </div>
         </div>
       </section>
