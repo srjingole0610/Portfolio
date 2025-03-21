@@ -17,7 +17,7 @@ const FadeIn = ({
   duration = 0.5,
   className = ''
 }: FadeInProps) => {
-  let initial = { opacity: 0 };
+  let initial: { opacity: number; y?: number; x?: number } = { opacity: 0 };
   
   if (direction === 'up') {
     initial = { ...initial, y: 50 };
