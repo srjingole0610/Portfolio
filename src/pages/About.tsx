@@ -17,6 +17,16 @@ import {
 } from '@/components/ui/tabs';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
+const handleDownload = () => {
+  const link = document.createElement('a');
+  link.href = 'public/Suraj_Ingole_CV.pdf';
+  link.setAttribute('download', 'Suraj_Ingole_CV.pdf');
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+
+
 const About = () => {
   return (
     <Layout>
@@ -49,10 +59,8 @@ const About = () => {
                   My approach to development is centered around creating high-performance, user-friendly applications that deliver exceptional experiences. I'm passionate about optimizing performance and ensuring applications are scalable, secure, and maintainable.
                 </p>
                 <div className="pt-4">
-                  <Button asChild>
-                    <a href="/Suraj_Ingole_Resume.pdf" target="_blank" rel="noopener noreferrer">
-                      <Download className="mr-2 h-4 w-4" /> Download Resume
-                    </a>
+                <Button onClick={handleDownload}>
+                    <Download className="mr-2 h-4 w-4" /> Download Resume
                   </Button>
                 </div>
               </div>
