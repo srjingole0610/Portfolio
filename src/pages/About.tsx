@@ -26,11 +26,11 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <FadeIn direction="right">
               <div className="relative flex items-center justify-center">
-                <Avatar className="w-64 h-64 border-4 border-primary/10">
+                <Avatar className="w-64 h-64 border-4 border-primary/10 rounded-full overflow-hidden">
                   <AvatarImage 
                     src="/lovable-uploads/ce52fa97-c5a2-4e10-8e92-22a18ab3fe9f.png" 
                     alt="Suraj Ingole" 
-                    className="object-cover"
+                    className="object-cover w-full h-full"
                   />
                   <AvatarFallback>SI</AvatarFallback>
                 </Avatar>
