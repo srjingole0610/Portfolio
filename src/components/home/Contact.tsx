@@ -73,12 +73,12 @@ const ContactSection = () => {
                 </div>
                 <div className="flex space-x-4">
                   <Button variant="outline" asChild>
-                    <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+                    <a href="http://linkedin.com/in/suraj-ingole-6b10a5123/" target="_blank" rel="noreferrer">
                       <Linkedin className="mr-2 h-4 w-4" />LinkedIn
                     </a>
                   </Button>
                   <Button variant="outline" asChild>
-                    <a href="https://github.com" target="_blank" rel="noreferrer">
+                    <a href="https://github.com/srjingole0610" target="_blank" rel="noreferrer">
                       <Github className="mr-2 h-4 w-4" />GitHub
                     </a>
                   </Button>

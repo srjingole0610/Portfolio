@@ -13,7 +13,7 @@ const skills = [
     title: "Backend Development",
     description: "Building robust server-side applications and APIs to power web applications.",
     icon: <ServerIcon className="h-10 w-10" />,
-    technologies: ["Node.js", "Express", ".NET Core", "C#", "REST APIs"]
+    technologies: ["Node.js", "Express", "REST APIs", "GraphQL"]
   },
   {
     title: "Database Management",

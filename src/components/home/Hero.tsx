@@ -24,7 +24,7 @@ const Hero = () => {
             
             <FadeIn delay={0.5} direction="up">
               <p className="text-xl text-muted-foreground">
-                I design and build applications that are intuitive, efficient, and deliver exceptional user experiences with expertise in React, Angular, Node.js and .NET Core.
+                I design and build applications that are intuitive, efficient, and deliver exceptional user experiences with expertise in React, Angular, Node.js and Express.
               </p>
             </FadeIn>
             
@@ -49,8 +49,8 @@ const Hero = () => {
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="relative w-4/5 aspect-square rounded-xl overflow-hidden shadow-2xl">
                   <img
-                    src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                    alt="Developer at work"
+                    src="/lovable-uploads/44fbd364-0779-413f-90cf-d70423e6a788.png"
+                    alt="Suraj Ingole"
                     className="w-full h-full object-cover"
                   />
                 </div>

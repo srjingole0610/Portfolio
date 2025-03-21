@@ -29,8 +29,8 @@ const About = () => {
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="relative w-4/5 aspect-square rounded-xl overflow-hidden shadow-2xl">
                       <img
-                        src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=988&q=80"
-                        alt="Profile"
+                        src="/lovable-uploads/44fbd364-0779-413f-90cf-d70423e6a788.png"
+                        alt="Suraj Ingole"
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -46,14 +46,14 @@ const About = () => {
                 </span>
                 <h1 className="text-4xl md:text-5xl font-bold mb-4">Hi, I'm Suraj Ingole</h1>
                 <p className="text-lg text-muted-foreground">
-                  I'm a full-stack developer with expertise in JavaScript, React, Angular, Node.js, and .NET Core. With over 5 years of professional experience, I've worked on projects ranging from small business websites to large enterprise applications.
+                  I'm a full-stack developer with expertise in JavaScript, React, Angular, Node.js, and Express. With over 5 years of professional experience, I've worked on projects ranging from small business websites to large enterprise applications.
                 </p>
                 <p className="text-lg text-muted-foreground">
                   My approach to development is centered around creating high-performance, user-friendly applications that deliver exceptional experiences. I'm passionate about optimizing performance and ensuring applications are scalable, secure, and maintainable.
                 </p>
                 <div className="pt-4">
                   <Button asChild>
-                    <a href="/resume.pdf" download>
+                    <a href="/Suraj_Ingole_Resume.pdf" download>
                       <Download className="mr-2 h-4 w-4" /> Download Resume
                     </a>
                   </Button>
@@ -96,9 +96,9 @@ const About = () => {
                     </CardHeader>
                     <CardContent className="space-y-2">
                       <ul className="list-disc pl-5 space-y-2">
-                        <li>Orchestrated end-to-end development of dynamic web applications with a robust tech stack that includes HTML, CSS, JavaScript, React, C#, .NET Core, SQL, and more.</li>
+                        <li>Orchestrated end-to-end development of dynamic web applications with a robust tech stack that includes HTML, CSS, JavaScript, React, Node.js, Express, SQL, and more.</li>
                         <li>Collaborated seamlessly with multidisciplinary teams, blending design, functionality, and user experience to create engaging and intuitive interfaces.</li>
-                        <li>Engineered high-performance back-end systems using C# and .NET Core, ensuring seamless data integration, security, and scalability.</li>
+                        <li>Engineered high-performance back-end systems using Node.js and Express, ensuring seamless data integration, security, and scalability.</li>
                         <li>Leveraged databases such as SQL to manage application data and implement effective data retrieval and manipulation strategies.</li>
                         <li>Utilized React to design and build reusable UI components, implementing dynamic rendering and efficient state management.</li>
                         <li>Streamlined development processes through agile methodologies, resulting in accelerated delivery and increased efficiency.</li>
@@ -114,11 +114,11 @@ const About = () => {
                     </CardHeader>
                     <CardContent className="space-y-2">
                       <ul className="list-disc pl-5 space-y-2">
-                        <li>Led the development of multiple web applications from concept to deployment using the MEARN stack and .NET Core.</li>
-                        <li>Implemented RESTful APIs and optimized server-side performance using .NET Core to handle large volumes of data.</li>
+                        <li>Led the development of multiple web applications from concept to deployment using the MERN stack.</li>
+                        <li>Implemented RESTful APIs and optimized server-side performance using Node.js and Express to handle large volumes of data.</li>
                         <li>Collaborated with frontend developers to integrate dynamic user interfaces using Angular and React frameworks.</li>
                         <li>Designed and maintained MongoDB and SQL databases, ensuring data integrity and security.</li>
-                        <li>Utilized .NET Core to engineer high-performance back-end systems, ensuring seamless data integration, security, and scalability.</li>
+                        <li>Utilized Node.js and Express to engineer high-performance back-end systems, ensuring seamless data integration, security, and scalability.</li>
                         <li>Conducted code reviews, performed testing, and resolved bugs to maintain high code quality and reliability.</li>
                         <li>Leveraged cloud technologies such as AWS to optimize deployment and enhance application reliability.</li>
                       </ul>
@@ -134,7 +134,7 @@ const About = () => {
                       <h4 className="font-medium">At Honeywell:</h4>
                       <ul className="list-disc pl-5 space-y-2 mb-4">
                         <li>Developed front-end website architecture using HTML, CSS, JavaScript, and React.</li>
-                        <li>Developed back-end website applications using C# and .NET Core.</li>
+                        <li>Developed back-end website applications using Node.js and Express.</li>
                         <li>Created servers and databases for functionality using SQL.</li>
                         <li>Ensured responsiveness of applications across various devices and screen sizes.</li>
                         <li>Met both technical and consumer needs by implementing user-centered design principles.</li>
@@ -146,11 +146,11 @@ const About = () => {
                       <h4 className="font-medium">At Thomson Reuters:</h4>
                       <ul className="list-disc pl-5 space-y-2">
                         <li>Drive and attend scrum meetings, ensuring efficient project management.</li>
-                        <li>Implement changes in the front-end of the application using React and C#.</li>
+                        <li>Implement changes in the front-end of the application using React.</li>
                         <li>Write scripts, modify store procedures, and other queries using SQL.</li>
-                        <li>Lead the development of VB.NET applications, ensuring high-quality software.</li>
+                        <li>Lead the development of JavaScript-based applications, ensuring high-quality software.</li>
                         <li>Conduct unit testing and ensure code quality and reliability.</li>
-                        <li>Implement logics using C# and .NET Core to ensure efficient and effective application functionality.</li>
+                        <li>Implement logics using Node.js and Express to ensure efficient and effective application functionality.</li>
                       </ul>
                     </CardContent>
                   </Card>

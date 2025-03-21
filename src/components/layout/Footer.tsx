@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="space-y-4">
-            <h3 className="text-xl font-semibold">Portfolio</h3>
+            <h3 className="text-xl font-semibold">Suraj Ingole</h3>
             <p className="text-muted-foreground">
               A showcase of my work and skills in web development and design.
             </p>
@@ -31,6 +31,14 @@ const Footer = () => {
               <Link to="/contact" className="text-muted-foreground hover:text-foreground transition-colors">
                 Contact
               </Link>
+              <a 
+                href="https://app.netlify.com/teams/srjingole0610/overview" 
+                target="_blank" 
+                rel="noreferrer"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Netlify Projects
+              </a>
             </nav>
           </div>
 
@@ -38,7 +46,7 @@ const Footer = () => {
             <h3 className="text-xl font-semibold">Connect</h3>
             <div className="flex space-x-4">
               <a 
-                href="https://github.com" 
+                href="https://github.com/srjingole0610" 
                 target="_blank" 
                 rel="noreferrer" 
                 className="text-muted-foreground hover:text-foreground transition-colors"
@@ -47,7 +55,7 @@ const Footer = () => {
                 <Github size={20} />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="http://linkedin.com/in/suraj-ingole-6b10a5123/" 
                 target="_blank" 
                 rel="noreferrer" 
                 className="text-muted-foreground hover:text-foreground transition-colors"
@@ -65,7 +73,7 @@ const Footer = () => {
                 <Twitter size={20} />
               </a>
               <a 
-                href="mailto:hello@example.com" 
+                href="mailto:suraj.ingole0610@gmail.com" 
                 className="text-muted-foreground hover:text-foreground transition-colors"
                 aria-label="Email"
               >
@@ -76,7 +84,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 pt-8 border-t border-border text-center text-sm text-muted-foreground">
-          <p>© {currentYear} Portfolio. All rights reserved.</p>
+          <p>© {currentYear} Suraj Ingole. All rights reserved.</p>
         </div>
       </div>
     </footer>
