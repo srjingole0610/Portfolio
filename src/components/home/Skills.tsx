@@ -1,5 +1,5 @@
 
-import { CodeIcon, LayoutIcon, PaintbrushIcon, ServerIcon, DatabaseIcon, ToolIcon } from 'lucide-react';
+import { CodeIcon, LayoutIcon, PaintbrushIcon, ServerIcon, DatabaseIcon, Wrench } from 'lucide-react';
 import FadeIn from '../animation/FadeIn';
 
 const skills = [
@@ -24,7 +24,7 @@ const skills = [
   {
     title: "DevOps & Tools",
     description: "Utilizing modern tools and practices for efficient development and deployment.",
-    icon: <ToolIcon className="h-10 w-10" />,
+    icon: <Wrench className="h-10 w-10" />,
     technologies: ["Git", "GitHub", "Azure DevOps", "AWS", "Postman", "JIRA"]
   }
 ];
