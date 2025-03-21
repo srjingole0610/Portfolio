@@ -6,12 +6,13 @@ import { configureStore } from '@reduxjs/toolkit';
 import { BrowserRouter } from 'react-router-dom';
 import themeReducer from '@/store/slices/themeSlice';
 import projectsReducer from '@/store/slices/projectsSlice';
+import type { RootState } from '@/store';
 
 // Create a custom renderer that includes providers
 const customRender = (
   ui: ReactElement,
   {
-    preloadedState = {},
+    preloadedState = {} as Partial<RootState>,
     store = configureStore({
       reducer: {
         theme: themeReducer,
@@ -21,8 +22,8 @@ const customRender = (
     }),
     ...renderOptions
   }: {
-    preloadedState?: any;
-    store?: any;
+    preloadedState?: Partial<RootState>;
+    store?: ReturnType<typeof configureStore>;
     renderOptions?: Omit<RenderOptions, 'wrapper'>;
   } = {}
 ) => {
