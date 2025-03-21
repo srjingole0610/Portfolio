@@ -16,6 +16,7 @@ import {
   TabsList, 
   TabsTrigger 
 } from '@/components/ui/tabs';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const About = () => {
   return (
@@ -24,18 +25,15 @@ const About = () => {
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <FadeIn direction="right">
-              <div className="relative">
-                <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/10 to-secondary overflow-hidden">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="relative w-4/5 aspect-square rounded-xl overflow-hidden shadow-2xl">
-                      <img
-                        src="/lovable-uploads/44fbd364-0779-413f-90cf-d70423e6a788.png"
-                        alt="Suraj Ingole"
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  </div>
-                </div>
+              <div className="relative flex items-center justify-center">
+                <Avatar className="w-64 h-64 border-4 border-primary/10">
+                  <AvatarImage 
+                    src="/lovable-uploads/ce52fa97-c5a2-4e10-8e92-22a18ab3fe9f.png" 
+                    alt="Suraj Ingole" 
+                    className="object-cover"
+                  />
+                  <AvatarFallback>SI</AvatarFallback>
+                </Avatar>
               </div>
             </FadeIn>
 
@@ -176,30 +174,64 @@ const About = () => {
                         <CardTitle>Agile Scrum Certification</CardTitle>
                         <CardDescription>JPMorgan Chase & Co.</CardDescription>
                       </CardHeader>
+                      <CardContent>
+                        <a 
+                          href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/J.P.%20Morgan/5QiaMtZ4k8ngYKn4D_JPMorgan%20Chase%20&%20Co._7yGCQHgHgkgiTsL2q_1693288388266_completion_certificate.pdf" 
+                          target="_blank" 
+                          rel="noreferrer"
+                          className="text-primary hover:underline"
+                        >
+                          View Certificate
+                        </a>
+                      </CardContent>
                     </Card>
                     <Card>
                       <CardHeader>
                         <CardTitle>Figma UI UX Design</CardTitle>
                         <CardDescription>Udemy</CardDescription>
                       </CardHeader>
+                      <CardContent>
+                        <a 
+                          href="https://globant.udemy.com/?next=%2Fcertificate%2FUC-2c61121a-710e-460b-8521-ab944c79b712%2F" 
+                          target="_blank" 
+                          rel="noreferrer"
+                          className="text-primary hover:underline"
+                        >
+                          View Certificate
+                        </a>
+                      </CardContent>
                     </Card>
                     <Card>
                       <CardHeader>
                         <CardTitle>Javascript</CardTitle>
                         <CardDescription>Udemy</CardDescription>
                       </CardHeader>
+                      <CardContent>
+                        <a 
+                          href="https://globant.udemy.com/?next=%2Fcertificate%2FUC-a1824948-527c-4e43-bd5e-6c1999d24ed8%2F" 
+                          target="_blank" 
+                          rel="noreferrer"
+                          className="text-primary hover:underline"
+                        >
+                          View Certificate
+                        </a>
+                      </CardContent>
                     </Card>
                     <Card>
                       <CardHeader>
                         <CardTitle>SQL (Basic) Certificate</CardTitle>
                         <CardDescription>HackerRank</CardDescription>
                       </CardHeader>
-                    </Card>
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>C# (Basic) Certificate</CardTitle>
-                        <CardDescription>HackerRank</CardDescription>
-                      </CardHeader>
+                      <CardContent>
+                        <a 
+                          href="https://www.hackerrank.com/certificates/95f43e242e0d" 
+                          target="_blank" 
+                          rel="noreferrer"
+                          className="text-primary hover:underline"
+                        >
+                          View Certificate
+                        </a>
+                      </CardContent>
                     </Card>
                   </div>
                 </TabsContent>
