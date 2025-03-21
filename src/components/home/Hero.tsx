@@ -49,7 +49,7 @@ const Hero = () => {
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="relative w-4/5 aspect-square rounded-xl overflow-hidden shadow-2xl">
                   <img
-                    src="/lovable-uploads/44fbd364-0779-413f-90cf-d70423e6a788.png"
+                    src="/images\pexels-kevin-ku-92347-577585.jpg"
                     alt="Suraj Ingole"
                     className="w-full h-full object-cover"
                   />

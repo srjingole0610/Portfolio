@@ -1,4 +1,3 @@
-
 import Layout from '@/components/layout/Layout';
 import FadeIn from '@/components/animation/FadeIn';
 import { Button } from '@/components/ui/button';
@@ -28,7 +27,7 @@ const About = () => {
               <div className="relative flex items-center justify-center">
                 <Avatar className="w-64 h-64 border-4 border-primary/10 rounded-full overflow-hidden">
                   <AvatarImage 
-                    src="/lovable-uploads/ce52fa97-c5a2-4e10-8e92-22a18ab3fe9f.png" 
+                    src="/images\ProfileImage.png"
                     alt="Suraj Ingole" 
                     className="object-cover w-full h-full"
                   />
@@ -44,14 +43,14 @@ const About = () => {
                 </span>
                 <h1 className="text-4xl md:text-5xl font-bold mb-4">Hi, I'm Suraj Ingole</h1>
                 <p className="text-lg text-muted-foreground">
-                  I'm a full-stack developer with expertise in JavaScript, React, Angular, Node.js, and Express. With over 5 years of professional experience, I've worked on projects ranging from small business websites to large enterprise applications.
+                  I'm a full-stack developer with expertise in JavaScript, React, Angular, Node.js, and Express. With over 6.5+ years of professional experience, I've worked on projects ranging from small business websites to large enterprise applications.
                 </p>
                 <p className="text-lg text-muted-foreground">
                   My approach to development is centered around creating high-performance, user-friendly applications that deliver exceptional experiences. I'm passionate about optimizing performance and ensuring applications are scalable, secure, and maintainable.
                 </p>
                 <div className="pt-4">
                   <Button asChild>
-                    <a href="/Suraj_Ingole_Resume.pdf" download>
+                    <a href="/Suraj_Ingole_Resume.pdf" target="_blank" rel="noopener noreferrer">
                       <Download className="mr-2 h-4 w-4" /> Download Resume
                     </a>
                   </Button>
@@ -83,6 +82,8 @@ const About = () => {
                         <li>Refactored legacy codebase reducing bundle size by 30%, which significantly improved application load times and user experience.</li>
                         <li>Created backend API using Node and express with PostgreSQL as the Database.</li>
                         <li>Responsible for designing Database logic, Field_Names in PostgreSQL with the Data engineer.</li>
+                        <li>Implemented TypeScript for type safety in the codebase, enhancing maintainability and reducing runtime errors.</li>
+                        <li>Utilized AWS services for deploying applications, ensuring scalability and reliability.</li>
                       </ul>
                     </CardContent>
                   </Card>
@@ -101,6 +102,8 @@ const About = () => {
                         <li>Utilized React to design and build reusable UI components, implementing dynamic rendering and efficient state management.</li>
                         <li>Streamlined development processes through agile methodologies, resulting in accelerated delivery and increased efficiency.</li>
                         <li>Optimized deployment and enhanced application reliability by leveraging cloud technologies such as AWS.</li>
+                        <li>Implemented TypeScript for type safety in the codebase, enhancing maintainability and reducing runtime errors.</li>
+                        <li>Utilized AWS services for deploying applications, ensuring scalability and reliability.</li>
                       </ul>
                     </CardContent>
                   </Card>
@@ -119,6 +122,8 @@ const About = () => {
                         <li>Utilized Node.js and Express to engineer high-performance back-end systems, ensuring seamless data integration, security, and scalability.</li>
                         <li>Conducted code reviews, performed testing, and resolved bugs to maintain high code quality and reliability.</li>
                         <li>Leveraged cloud technologies such as AWS to optimize deployment and enhance application reliability.</li>
+                        <li>Implemented TypeScript for type safety in the codebase, enhancing maintainability and reducing runtime errors.</li>
+                        <li>Utilized AWS services for deploying applications, ensuring scalability and reliability.</li>
                       </ul>
                     </CardContent>
                   </Card>
@@ -139,6 +144,8 @@ const About = () => {
                         <li>Resolved user issues through proactive communication and effective problem-solving.</li>
                         <li>Troubleshot, debugged, and upgraded software to ensure optimal performance.</li>
                         <li>Wrote technical documentation to maintain code quality and facilitate knowledge sharing.</li>
+                        <li>Implemented TypeScript for type safety in the codebase, enhancing maintainability and reducing runtime errors.</li>
+                        <li>Utilized AWS services for deploying applications, ensuring scalability and reliability.</li>
                       </ul>
 
                       <h4 className="font-medium">At Thomson Reuters:</h4>
@@ -163,6 +170,26 @@ const About = () => {
                     <CardContent>
                       <p>Pune</p>
                       <p>Percentage: 76%</p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>HSC</CardTitle>
+                      <CardDescription>KVS | Apr 2013 - May 2014</CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p>Pune</p>
+                      <p>Percentage: 85%</p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>SSC</CardTitle>
+                      <CardDescription>KVS | Apr 2011 - May 2012</CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p>Pune</p>
+                      <p>Percentage: 94%</p>
                     </CardContent>
                   </Card>
                 </TabsContent>
