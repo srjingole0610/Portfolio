@@ -19,7 +19,7 @@ import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const handleDownload = () => {
   const link = document.createElement('a');
-  link.href = 'public/Suraj_Ingole_CV.pdf';
+  link.href = '/Suraj_Ingole_CV.pdf';
   link.setAttribute('download', 'Suraj_Ingole_CV.pdf');
   document.body.appendChild(link);
   link.click();
