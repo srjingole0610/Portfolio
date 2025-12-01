@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://surajingoleportfolio.netlify.app/sitemap.xml

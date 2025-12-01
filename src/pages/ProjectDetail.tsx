@@ -7,6 +7,7 @@ import { selectProject, clearSelectedProject } from '@/store/slices/projectsSlic
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, ArrowUpRight, Github } from 'lucide-react';
 import FadeIn from '@/components/animation/FadeIn';
+import SEO from '@/components/SEO';
 
 const ProjectDetail = () => {
   const { id } = useParams<{ id: string }>();
@@ -38,8 +39,16 @@ const ProjectDetail = () => {
     );
   }
 
+
+
   return (
     <Layout>
+      <SEO 
+        title={selectedProject.title} 
+        description={selectedProject.description}
+        image={selectedProject.imageUrl}
+        url={`https://surajingoleportfolio.netlify.app/projects/${selectedProject.id}`}
+      />
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
           <Button 
