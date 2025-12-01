@@ -21,6 +21,21 @@ const transporter = nodemailer.createTransport({
 });
 
 export const handler: Handler = async (event) => {
+  // Check for environment variables
+  if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
+    console.error('Missing environment variables');
+    return {
+      statusCode: 500,
+      body: JSON.stringify({ 
+        message: 'Server Configuration Error: Missing environment variables (EMAIL_USER or EMAIL_PASS).',
+        debug: {
+          userSet: !!process.env.EMAIL_USER,
+          passSet: !!process.env.EMAIL_PASS
+        }
+      }),
+    };
+  }
+
   if (event.httpMethod !== 'POST') {
     return {
       statusCode: 405,
@@ -59,7 +74,10 @@ export const handler: Handler = async (event) => {
       console.error('MX Lookup Error:', error);
       return {
         statusCode: 400,
-        body: JSON.stringify({ message: 'Invalid email domain or DNS error' }),
+        body: JSON.stringify({ 
+          message: 'Invalid email domain or DNS error',
+          debug: error instanceof Error ? error.message : String(error)
+        }),
       };
     }
 
@@ -90,7 +108,11 @@ export const handler: Handler = async (event) => {
     console.error('Email Send Error:', error);
     return {
       statusCode: 500,
-      body: JSON.stringify({ message: 'Failed to send email. Please try again later.' }),
+      body: JSON.stringify({ 
+        message: 'Failed to send email.', 
+        error: error instanceof Error ? error.message : String(error),
+        stack: error instanceof Error ? error.stack : undefined
+      }),
     };
   }
 };
