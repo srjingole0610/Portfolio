@@ -8,6 +8,8 @@ import { Button } from '@/components/ui/button';
 import { ArrowUpRight, Github } from 'lucide-react';
 import FadeIn from '@/components/animation/FadeIn';
 
+import SEO from '@/components/SEO';
+
 const Projects = () => {
   const { projects } = useAppSelector(state => state.projects);
   const dispatch = useAppDispatch();
@@ -24,8 +26,15 @@ const Projects = () => {
     ? projects.filter(project => project.technologies.includes(filter))
     : projects;
 
+
+
   return (
     <Layout>
+      <SEO 
+        title="Projects" 
+        description="Explore my portfolio of web development projects, featuring React, Node.js, and other modern technologies."
+        url="https://surajingoleportfolio.netlify.app/projects"
+      />
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
           <FadeIn direction="up">

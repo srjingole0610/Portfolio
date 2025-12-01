@@ -1,4 +1,5 @@
 
+import React from 'react';
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import Hero from '../Hero';
@@ -7,7 +8,7 @@ import { MemoryRouter } from 'react-router-dom';
 // Mock framer-motion to avoid animation issues in tests
 vi.mock('framer-motion', () => ({
   motion: {
-    div: ({ children, ...props }: any) => <div {...props}>{children}</div>,
+    div: ({ children, ...props }) => <div {...props}>{children}</div>,
   },
 }));
 

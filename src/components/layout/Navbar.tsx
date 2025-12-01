@@ -1,17 +1,14 @@
 
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Moon, Sun, Menu, X } from 'lucide-react';
-import { useAppDispatch, useAppSelector } from '@/store/hooks';
-import { toggleTheme } from '@/store/slices/themeSlice';
+import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from '@/components/ui/button';
+import { ThemeToggle } from '@/components/ThemeToggle';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const isDarkMode = useAppSelector(state => state.theme.isDarkMode);
-  const dispatch = useAppDispatch();
 
   const navLinks = [
     { path: '/', label: 'Home' },
@@ -39,10 +36,6 @@ const Navbar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const handleThemeToggle = () => {
-    dispatch(toggleTheme());
-  };
-
   return (
     <header 
       className={`fixed w-full top-0 z-50 transition-all duration-300 ${
@@ -66,26 +59,12 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={handleThemeToggle}
-              aria-label="Toggle theme"
-            >
-              {isDarkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-            </Button>
+            <ThemeToggle />
           </nav>
 
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center space-x-3">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={handleThemeToggle}
-              aria-label="Toggle theme"
-            >
-              {isDarkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-            </Button>
+            <ThemeToggle />
             <Button
               variant="ghost"
               size="icon"

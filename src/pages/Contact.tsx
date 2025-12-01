@@ -3,9 +3,16 @@ import Layout from '@/components/layout/Layout';
 import ContactSection from '@/components/home/Contact';
 import FadeIn from '@/components/animation/FadeIn';
 
+import SEO from '@/components/SEO';
+
 const Contact = () => {
   return (
     <Layout>
+      <SEO 
+        title="Contact" 
+        description="Get in touch with Suraj Ingole for collaboration or inquiries."
+        url="https://surajingoleportfolio.netlify.app/contact"
+      />
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
           <FadeIn direction="up">
